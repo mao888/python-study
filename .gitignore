@@ -1,0 +1,10 @@
+.idea
+*.iml
+*.exe
+db.go
+*.log
+
+# .DS_Store
+.DS_Store
+**/.DS_Store
+.DS_Store?
