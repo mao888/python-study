@@ -49,3 +49,19 @@ print('a的实部是:', a.real, 'a的虚部是:', a.imag)   # a的实部是: 2.0
 print(complex(b))   # (6+0j)
 # 分隔符
 print('-'*50)
+
+# 4．布尔型
+'''
+1. 布尔型只有True和False两个值，本质上来说，布尔型其实是一种特殊的整数，True对应1，False对应0。
+任何对象都具有布尔属性，在Python中，以下数据的值均为False：
+（1）None。
+（2）False。
+（3）任何为0的数字类型：0、0.0、0j。
+（4）任何空字符、空列表、空字典：＂＂、（）、[ ]、{}。
+（5）用户定义的类实例，如果类中定义了__bool__（）或者__len__（）方法，并且方法返回0，或者布尔值False。
+'''
+print(bool())
+print(bool(''))
+print(bool(0))
+print(bool([]))
+print('-'*50)
