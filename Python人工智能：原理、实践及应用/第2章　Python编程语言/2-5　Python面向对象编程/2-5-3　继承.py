@@ -5,3 +5,23 @@
  class子类名(父类名):
 子类不能继承父类的私有属性和方法，但能自动拥有父类其他的属性和方法。如果子类对父类提供的属性和方法进行修改，叫重写。如果子类重新定义了父类方法后，还需要访问父类的同名方法，可以使用super关键字，代码如下：
 """
+class Fridge:
+    def __init__(self):
+        print("这是一类冰箱")
+    def pack(self, goods):
+        self.goods = goods
+        print("冰箱里装入了%s"%self.goods)
+
+class Double_Door(Fridge):
+    def __init__(self): #重写父类的构造方法
+        super().__init__() #调用父类的构造方法
+        print("这是一种双开门冰箱")
+fridge = Double_Door()
+fridge.pack("苹果")   #继承父类的方法
+
+"""
+运行结果如下：
+这是一类冰箱
+这是一种双开门冰箱
+冰箱里装入了苹果
+"""
