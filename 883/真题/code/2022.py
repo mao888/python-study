@@ -131,3 +131,18 @@ else:
 '''
 A 是不可能事件=⇒ P(A)=0; 注意概率为0 的事件不一定是不可能事件, 但不可能事件一定概率为0
 '''
+
+# 填空题 3 * 10
+# 4.
+for i in  range (1, 6):
+    pass
+print(i)    # 5
+
+# 7.
+x = 3==3,5
+print(x)    # (True, 5)
+
+# 8.
+print('abcab'.replace('a','yy'))   # yyybcyyyb
+# 9.
+print(3**2**3)  # 6561
